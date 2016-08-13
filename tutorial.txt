@@ -18,6 +18,7 @@ b920846 HEAD@{2}: commit: add GPL
 2:git commit [只提交stage里的文件]
 每次修改，如果不add到暂存区，那就不会加入到commit中
 
-
-
-
+＃撤销修改
+git checkout -- readme.txt [把readme.txt文件在工作区的修改全部撤销]
+1:如果没有git add readme.txt放到暂存区，用git checkout -- readme.txt 撤销修改
+2:如果git add readme.txt放到了暂存区，git reset HEAD readme.txt 把暂存区的修改撤销掉

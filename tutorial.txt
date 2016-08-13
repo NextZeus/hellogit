@@ -14,5 +14,10 @@ b920846 HEAD@{0}: reset: moving to b920
 b920846 HEAD@{2}: commit: add GPL
 2205b26 HEAD@{3}: commit (initial): wrote a readme file
 
+1:git add  [将修改过的文件放到stage暂存区，以待提交]
+2:git commit [只提交stage里的文件]
+每次修改，如果不add到暂存区，那就不会加入到commit中
+
+
 
 

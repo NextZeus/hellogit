@@ -22,3 +22,9 @@ b920846 HEAD@{2}: commit: add GPL
 git checkout -- readme.txt [把readme.txt文件在工作区的修改全部撤销]
 1:如果没有git add readme.txt放到暂存区，用git checkout -- readme.txt 撤销修改
 2:如果git add readme.txt放到了暂存区，git reset HEAD readme.txt 把暂存区的修改撤销掉
+
+[没有git add ,git checkout -- <file>]git checkout HEAD -- readme.txt
+[如果已经git add放到暂存区，git reset HEAD <file>将修改从暂存区丢弃,再git checkout -- <file>撤销修改]
+
+git checkout HEAD -- readme.txt
+git reset HEAD <file> 只会撤销暂存区的本次修改，不会覆盖工作区的修改

@@ -1,0 +1,18 @@
+git add filename 
+git commit -a -m
+git diff readme.txt 查看改动
+git log --pretty=online  查看提交日志
+
+git reset --hard HEAD^ 版本回退到上一个版本
+HEAD is now at 2205b26 wrote a readme file
+
+git reset --hard [版本号] 回退到指定版本
+
+git reflog[查看git使用命令历史]
+b920846 HEAD@{0}: reset: moving to b920
+2205b26 HEAD@{1}: reset: moving to HEAD^
+b920846 HEAD@{2}: commit: add GPL
+2205b26 HEAD@{3}: commit (initial): wrote a readme file
+
+
+

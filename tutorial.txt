@@ -56,3 +56,13 @@ Git鼓励大量使用分支：
 
 用带参数的git log也可以看到分支的合并情况：
 git log --graph --pretty=oneline --abbrev-commit 
+
+#--no-off
+git merge --no-ff -m "merge with no-ff" dev
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并
+
+#git stash
+git stash apply 应用缓存区的修改
+git stash drop 删除缓存区
+git stash pop [上面两个的总命令]
+git stash list

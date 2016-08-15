@@ -126,3 +126,14 @@ bogon:learngit $ git push origin :refs/tags/v0.9
 To https://github.com/NextZeus/learngit.git
  - [deleted]         v0.9
 
+
+#配置命令别名
+git config --global alias.st status
+git config --global alias.ci commit
+git config --global alias.br branch
+git config --global alias.unstage 'reset HEAD'
+git config --global alias.prettylog 'log --pretty=oneline'
+
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+
